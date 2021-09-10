@@ -4,25 +4,16 @@ sap.ui.define([
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
-     * @param {typeof sap.m.MessageToast} MessageToast
-     * @param {typeof sap.ui.model.resource.ResourceModel} ResourceModel
      */
 
-    function (Controller, MessageToast, ResourceModel) {
+    function (Controller) {
         "use strict";
         return Controller.extend("Invoices.invoices.controller.App", {
 
-            onInit: function () {
-
-
-            },
-            
-            onShowHello: function () {
+            onOpenDialogHeader: function () {
                 // @ts-ignore
-                var oBundle = this.getView().getModel("i18n").getResourceBundle();
-                var sRecipient = this.getView().getModel().getProperty("/recipient/name");
-                var sMsg = oBundle.getText("helloMsg", [sRecipient]);
-                MessageToast.show(sMsg);
+                this.getOwnerComponent().openHelloDialog();                
             }
+            
     });
 });
