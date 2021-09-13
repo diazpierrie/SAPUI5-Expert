@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    <Panel headerText="{i18n>panelFragTitle}" class="sapUiResponsiveMargin" width="50%">
+        <f:SimpleForm id="form" editable="true">
+            <f:content>
+                <Label text="{i18n>labelPerson}" labelFor="personName"/>
+                <Input id="personName" width="40%"/>
+            </f:content>
+        </f:SimpleForm>
+    </Panel>
+</core:FragmentDefinition>
+<!-- Los fragmentos se usan cuando en la app se requiere reutilizar elementos que se han definido en otra vista -->

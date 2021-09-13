@@ -1,0 +1,17 @@
+<mvc:View controllerName="logaligroup.SAPUI5.controller.App"
+            xmlns="sap.m" 
+            xmlns:mvc="sap.ui.core.mvc"
+            displayBlock="true">  <!-- :mvc nos permite agregar un alias -->
+    <Shell> <!-- Este control reside por encima de todos los elementos de la Aplicacion, deja espacios a los costados en el Desktop. En las otras plataformas no agrega nada. Todo se hace en automatico gracias a las configuraciones del Responsive.-->
+        <App>
+            <pages>
+                <Page title="{i18n>appTitle}"> <!-- Agrego como titulo el que se encuentra en el i18n bajo la variable appTitle -->
+                    <content>
+                        <mvc:XMLView viewName="logaligroup.SAPUI5.view.HelloPanel"></mvc:XMLView>
+                        <mvc:XMLView viewName="logaligroup.SAPUI5.view.InvoicesList"></mvc:XMLView>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
