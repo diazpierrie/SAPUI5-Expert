@@ -84,7 +84,7 @@ sap.ui.define([
                                     fnResponse(500, "metadata Error", aEntry);
                                 }
                             });
-                        };
+                        }
 
                         // simulate request errors 
                         var sErrorParam = oOptions.errorType || oUriParameters.get("errorType");
@@ -94,7 +94,7 @@ sap.ui.define([
                             aRequests.forEach(function (aEntry) {
                                 fnResponse(iErrorCode, sErrorParam, aEntry);
                             });
-                        };
+                        }
 
                         // set requests and start the server 
                         oMockServer.setRequests(aRequests);
