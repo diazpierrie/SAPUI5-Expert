@@ -1,3 +1,5 @@
+/* eslint-disable @sap/ui5-jsdocs/no-jsdoc-param */
+/* eslint-disable no-undef */
 //@ts-nocheck
 sap.ui.define([
     "sap/ui/core/util/MockServer",
